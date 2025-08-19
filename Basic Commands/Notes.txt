@@ -1,0 +1,20 @@
+# Linux Basic Commands
+sudo apt install ncal
+cal 
+cal 2025
+cal august 2025
+date
+
+ctrl + l = Clear screen
+
+cat > input.txt
+life is amazing	
+
+cat >> output.txt
+life is amazing	
+
+> - Overwrites existing data
+>> - appends the to existing data
+
+cat < input.txt > output.txt
+ 

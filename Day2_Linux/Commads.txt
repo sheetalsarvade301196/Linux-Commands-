@@ -1,0 +1,28 @@
+
+grep comand - cat input.txt | grep "hello"
+
+Piping Concepts
+tee command works as piping command which works like two directional pipe , vertical and horizontal like "T" 
+date | cut -d' ' --field=1
+date | tee  fulldate.txt | cut -d' ' --field=1 
+date | tee  fulldate.txt | cut -d' ' --field=1 > today.txt  - It saves full date in fulldate.txt and outpur of cut command will be saved in today.txt
+date | tee  fulldate.txt | cut -d' ' --field=1 | tee today.txt
+
+xargs Commands
+The xargs command allows you to convert piped data into command line arguments
+date | xargs echo
+Wed Aug 20 08:15:50 UTC 2025
+
+date | xargs echo "hello"
+hello Wed Aug 20 08:16:04 UTC 2025
+
+date | cut -d' ' --field=1 | xargs echo
+Wed
+
+cat deletfiles.txt | xargs rm - this deletes the listed files in deletfiles.txt
+
+Aliases
+ source ~/.bashrc  ---- to reload the aliases 
+date | tee fulldate.txt | cut -d' ' --field=1 | tee shortdate.txt | xargs echo hello
+alias getdates='date | tee fulldate.txt | cut -d" "  --fields=1 | tee shortdate.txt | xargs echo hello'
+

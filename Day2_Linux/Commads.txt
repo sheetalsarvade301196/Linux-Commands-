@@ -26,3 +26,28 @@ Aliases
 date | tee fulldate.txt | cut -d' ' --field=1 | tee shortdate.txt | xargs echo hello
 alias getdates='date | tee fulldate.txt | cut -d" "  --fields=1 | tee shortdate.txt | xargs echo hello'
 
+File Related Commands
+pwd 
+ls
+ls -F > file1.txt
+ls -l
+ls -a
+ls D*
+ls file[0-9].txt
+cd /home/azureuser
+cd ..
+touch file1  
+mkdir folder
+touch {jan,feb,mar}_{2017,2018}/file(1..100}  - Make 1 to 100 files in folders jan2017,feb2017,mar2017 and jan2018,feb2018,mar2018
+mkdir -p A/B/C - create complate path that is nested folders 
+rm file1
+rm file*
+rm -r folder/
+cp file1.txt file2.txt
+mv file1 folder/
+
+sudo apt install locate
+sudo apt install mlocate
+
+
+

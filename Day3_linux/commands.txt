@@ -54,3 +54,5 @@ gunzip myarchive.tar
 tar -cvzf myarchive.tar.gz file{1-2}.txt  - archive and compress file
 tar -xvzf myarchive.tar.gz
 
+------------------------cron commands------------------------------------------
+crontab -e

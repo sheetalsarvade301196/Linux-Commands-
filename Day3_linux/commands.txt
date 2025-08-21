@@ -1,0 +1,8 @@
+locate command - install dependency packages
+
+sudo apt update && sudo apt install mlocate 
+sudo updatedb - Build the initial database
+
+locate *.txt
+locate -i *.TXT  - to search case insesitive data
+locate -i --limit 3 *.txt  --- To limit the output upto 3 records

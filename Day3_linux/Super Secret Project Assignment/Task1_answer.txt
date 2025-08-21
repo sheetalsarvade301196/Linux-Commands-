@@ -1,0 +1,9 @@
+mkdir super_secret_stuff
+cd super_secret_stuff
+touch top_secret.txt
+ls
+vim top_secret.txt
+sudo updatedb
+locate top_secret.txt
+locate top_secret.txt > secret_place.txt
+cat secret_place.txt

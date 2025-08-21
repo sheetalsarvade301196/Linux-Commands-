@@ -1,0 +1,3 @@
+Crontab row:
+
+* * * * * bash /home/azureuser/hungry.sh 

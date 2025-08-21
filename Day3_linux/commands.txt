@@ -1,8 +1,38 @@
-locate command - install dependency packages
-
+--------------locate command-------------------------------
+- install dependency packages
 sudo apt update && sudo apt install mlocate 
 sudo updatedb - Build the initial database
 
 locate *.txt
 locate -i *.TXT  - to search case insesitive data
 locate -i --limit 3 *.txt  --- To limit the output upto 3 records
+locate -S
+locate -S > database_before.txt
+locate --existing --follow -i --limit 5 *.txt
+
+-------------find command-----------------------------------------
+
+find /home/azureuser
+find . -maxdepth 1
+find *.txt
+find . -type f
+find . -type d
+find . -name "file1.txt"
+find . -iname "*.TXT"   - case insensitive
+sudo find / -type f -size +1000k | wc-l
+sudo find / -type f -size -1000k -size +3M | wc -l
+sudo find / -type f -size -1000k -o -size +3M | wc -l   --- to use or user -o 
+sudo find / .maxdepth 3 -type f -size +100k -size -5M -exec cp {} /home/azureuser/copy_here \;
+
+--------------Viewing File commands------------------------------------------------ 
+cat file1.txt
+cat file1.txt file2.txt > file3.txt  -  concatenate file1 and file2 into file3
+cat file{1-5}.txt > output.txt
+echo "abc" >> output.txt  -  appends abc at the end of output.txt
+tac output.txt     - Reverse the content in descending order (last line at first )
+cat file1.txt | rev   - reverse the letters in each line
+cat file1.txt | head -n 2
+cat file1.txt | wc -l  - count number of lines
+
+--------------Sorting data commands-------------------------------------------------
+

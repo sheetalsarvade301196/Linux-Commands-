@@ -35,4 +35,11 @@ cat file1.txt | head -n 2
 cat file1.txt | wc -l  - count number of lines
 
 --------------Sorting data commands-------------------------------------------------
-
+sort words.txt > sorted.txt
+sort words.txt | tac   - sort the descending order
+sort -r words.txt    - sort the descending order
+sort numbers.txt | less  - sort by degit
+sort -n numbers.txt | less   - sort by value of the number
+sort -nr number.txt | less   - sort by value of number but in desceding order ( highest number first)
+sort -u numbers0-9.txt    - sort uniquely avoid repeated numbers
+sort -ur numbers0-9.txt   - sort uniquely avoid repeated numbers but in descending order

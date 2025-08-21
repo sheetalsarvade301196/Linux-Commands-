@@ -43,3 +43,14 @@ sort -n numbers.txt | less   - sort by value of the number
 sort -nr number.txt | less   - sort by value of number but in desceding order ( highest number first)
 sort -u numbers0-9.txt    - sort uniquely avoid repeated numbers
 sort -ur numbers0-9.txt   - sort uniquely avoid repeated numbers but in descending order
+ls -lh /etc | head -n 20 | sort -k 5n    - sort tabular data
+
+------------------File Archiving and compression commands--------------
+tar -cvf myarchive.tar file{1-2}.txt   - create tar file
+tar -tf myarchive.tar  - view tar file data 
+tar -xvf myarchive.tar   - extract tar file
+gzip myarchive.tar    - compress the archive file to reduce space
+gunzip myarchive.tar
+tar -cvzf myarchive.tar.gz file{1-2}.txt  - archive and compress file
+tar -xvzf myarchive.tar.gz
+

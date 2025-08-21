@@ -1,0 +1,11 @@
+Database /var/cache/locate/locatedb is in the GNU LOCATE02 format.
+Database was last modified at 2025:08:21 04:55:14.794668694 +0000
+Locate database size: 909309 bytes
+All Filenames: 80432
+File names have a cumulative length of 4519237 bytes.
+Of those file names,
+
+        4 contain whitespace,
+        0 contain newline characters,
+        and 2 contain characters with the high bit set.
+Compression ratio 79.88% (higher is better)

@@ -1,0 +1,3 @@
+sudo find / -maxdepth 4 -type f -size +1M -exec ls -lh {} \;
+
+sudo find / -maxdepth 4 -type f -size +1M -exec ls -lh {} \; | sort -k 5 -h -r > ~/filesizes.txt
